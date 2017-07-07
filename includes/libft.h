@@ -6,7 +6,7 @@
 /*   By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/22 10:23:34 by oshudria          #+#    #+#             */
-/*   Updated: 2017/03/29 12:44:52 by oshudria         ###   ########.fr       */
+/*   Updated: 2017/07/07 21:26:03 by oshudria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,5 +107,7 @@ typedef struct		s_line
 }					t_line;
 
 double				ft_atof(const char *str);
+void				ft_swap_double(double *x, double *y);
+char				*ft_link_from_str(char *buf);
 
 #endif

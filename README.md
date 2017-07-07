@@ -18,8 +18,8 @@ ft_memmove          | ft_strclr          | ft_lstiter         | ft_isnumber     
 ft_memchr           | ft_striter         | ft_lstmap          | ft_maxcomdiv       |
 ft_memcmp           | ft_striteri        |                    | ft_atof            |
 ft_strlen           | ft_strmap          |                    | get_next_line      |
-ft_strdup           | ft_strmapi         |                    |                    |
-ft_strcpy           | ft_strequ          |                    |                    |
+ft_strdup           | ft_strmapi         |                    | ft_swap_double     |
+ft_strcpy           | ft_strequ          |                    | ft_link_from_str   |
 ft_strncpy          | ft_strnequ         |                    |                    |
 ft_strcat           | ft_strsub          |                    |                    |
 ft_strncat          | ft_strjoin         |                    |                    |

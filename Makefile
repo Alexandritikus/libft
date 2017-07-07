@@ -6,7 +6,7 @@
 #    By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/23 14:24:19 by oshudria          #+#    #+#              #
-#    Updated: 2017/06/06 13:12:20 by oshudria         ###   ########.fr        #
+#    Updated: 2017/07/07 21:24:37 by oshudria         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,9 @@ SRC_OTHER = ft_strrev.c \
 			ft_tablen.c \
 			ft_isnumber.c \
 			ft_maxcomdiv.c \
-			ft_atof.c
+			ft_atof.c \
+			ft_swap_double.c \
+			ft_link_from_str.c \
 
 OBJ_DIR = obj
 
