@@ -6,11 +6,12 @@
 /*   By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 08:17:09 by oshudria          #+#    #+#             */
-/*   Updated: 2017/04/03 10:38:44 by oshudria         ###   ########.fr       */
+/*   Updated: 2017/11/21 00:32:14 by oshudria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static size_t	ft_part_num(const char *s, char c)
 {
