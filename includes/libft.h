@@ -6,15 +6,13 @@
 /*   By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/22 10:23:34 by oshudria          #+#    #+#             */
-/*   Updated: 2017/07/07 21:26:03 by oshudria         ###   ########.fr       */
+/*   Updated: 2017/11/25 15:26:04 by oshudria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
 
 # define BUFF_SIZE 32
 
@@ -22,6 +20,9 @@
 # define MIN(a, b) (a <= b ? a : b)
 # define MAX(a, b) (a >= b ? a : b)
 
+/*
+ *	libc functions
+*/
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
@@ -39,8 +40,9 @@ size_t				ft_strlcat(char *dest, const char *src, size_t size);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *haystack, const char *needle);
-char				*ft_strnstr(const char *haystack, const char *needle,
-		size_t len);
+char				*ft_strnstr(const char *haystack,
+								const char *needle,
+								size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);
@@ -52,6 +54,9 @@ int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
+/*
+ *	additional functions
+*/
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);
@@ -77,6 +82,9 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
+/*
+ *	bonus part
+*/
 typedef struct		s_list
 {
 	void			*content;
@@ -91,12 +99,20 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *list, t_list *(*f)(t_list *elem));
 
+/*
+ *	other functions
+*/
 char				*ft_strrev(char *str);
 int					ft_atoi_base(char *str, int base);
 void				ft_tabdel(char ***tab);
 int					ft_tablen(char **tab);
 int					ft_isnumber(char *str);
 int					ft_maxcomdiv(int a, int b);
+char				*ft_itoa_base(int value, int base);
+
+/*
+ *	GNL
+*/
 int					get_next_line(const int fd, char **line);
 
 typedef struct		s_line
@@ -106,6 +122,9 @@ typedef struct		s_line
 	struct s_line	*next;
 }					t_line;
 
+/*
+ * additional functions for C projects
+*/
 double				ft_atof(const char *str);
 void				ft_swap_double(double *x, double *y);
 char				*ft_link_from_str(char *buf);
