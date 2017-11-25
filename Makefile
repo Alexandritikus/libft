@@ -6,13 +6,13 @@
 #    By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/23 14:24:19 by oshudria          #+#    #+#              #
-#    Updated: 2017/07/07 21:24:37 by oshudria         ###   ########.fr        #
+#    Updated: 2017/11/25 16:02:59 by oshudria         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 NAME = libft.a
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -Wno-unused-result -O3
 
 INCLUDES = -I./includes/
 
@@ -88,18 +88,21 @@ SRC_OTHER = ft_strrev.c \
 			ft_atof.c \
 			ft_swap_double.c \
 			ft_link_from_str.c \
+			ft_itoa_base.c
 
 OBJ_DIR = obj
 
-OBJ_LIBC = $(addprefix $(OBJ_DIR)/, $(SRC_LIBC:.c=.o))
-OBJ_ADD = $(addprefix $(OBJ_DIR)/, $(SRC_ADDITIONAL:.c=.o))
+OBJ_LIBC =  $(addprefix $(OBJ_DIR)/, $(SRC_LIBC:.c=.o))
+OBJ_ADD =   $(addprefix $(OBJ_DIR)/, $(SRC_ADDITIONAL:.c=.o))
 OBJ_BONUS = $(addprefix $(OBJ_DIR)/, $(SRC_BONUS:.c=.o))
-OBJ_GNL = $(addprefix $(OBJ_DIR)/, $(SRC_GNL:.c=.o))
+OBJ_GNL =   $(addprefix $(OBJ_DIR)/, $(SRC_GNL:.c=.o))
 OBJ_OTHER = $(addprefix $(OBJ_DIR)/, $(SRC_OTHER:.c=.o))
 
 COLOR_NONE = \033[0m
 COLOR_YELLOW = \033[33m
 COLOR_MAGENTA = \033[35m
+
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
