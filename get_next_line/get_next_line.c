@@ -6,11 +6,13 @@
 /*   By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/11 10:04:57 by oshudria          #+#    #+#             */
-/*   Updated: 2017/03/21 20:02:37 by oshudria         ###   ########.fr       */
+/*   Updated: 2017/11/25 15:15:41 by oshudria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 static char		*ft_strxjoin(char *s1, char const *s2)
 {
