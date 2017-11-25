@@ -6,11 +6,12 @@
 /*   By: oshudria <oshudria@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/25 11:16:04 by oshudria          #+#    #+#             */
-/*   Updated: 2017/04/03 10:38:01 by oshudria         ###   ########.fr       */
+/*   Updated: 2017/11/25 14:28:37 by oshudria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 void	ft_tabdel(char ***tab_ptr)
 {
